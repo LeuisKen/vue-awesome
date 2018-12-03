@@ -1,4 +1,4 @@
-import { get } from './register'
+import { get, register } from './register'
 
 export default {
   template: `
@@ -11,7 +11,7 @@ export default {
       width="{{width}}"
       height="{{height}}"
       viewBox="{{box}}"
-      style="{{style}}">
+      style="{{computedStyle}}">
       <slot>
         <path s-if="icon && icon.paths"
           s-for="path in icon.paths"
@@ -121,7 +121,7 @@ export default {
       const icon = this.data.get('icon')
       return this.data.get('childrenHeight') || icon && icon.height / this.data.get('ratio') * this.data.get('normalizedScale') || 0
     },
-    style () {
+    computedStyle () {
       const normalizedScale = this.data.get('normalizedScale')
       if (normalizedScale === 1) {
         return {}
@@ -178,7 +178,9 @@ export default {
       child.data.set('x', (width - child.data.get('width')) / 2)
       child.data.set('y', (height - child.data.get('height')) / 2)
     })
-  }
+  },
+
+  register
 }
 
 let cursor = 0xd4937

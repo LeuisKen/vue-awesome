@@ -20,18 +20,18 @@ $ npm install san-awesome
 
 ```html
 <!-- 基础用法 -->
-<icon name="beer"></icon>
+<v-icon name="beer"/>
 
 <!-- 添加选项 -->
-<icon name="sync" scale="2" spin></icon>
-<icon name="comment" flip="horizontal"></icon>
-<icon name="code-branch" label="Forked Repository"></icon>
+<v-icon name="sync" scale="2" spin/>
+<v-icon name="comment" flip="horizontal"/>
+<v-icon name="code-branch" label="Forked Repository"/>
 
 <!-- 堆叠图标 -->
-<icon label="No Photos">
-  <icon name="camera"></icon>
-  <icon name="ban" scale="2" class="alert"></icon>
-</icon>
+<v-icon label="No Photos">
+  <v-icon name="camera"/>
+  <v-icon name="ban" scale="2" class="alert"/>
+</v-icon>
 ```
 
 Font Awesome 5 开始把所有图标分成了多个包。San-Awesome 的图标都来自其中的免费图标，而免费图标分别来自 3 个不同的图标包：`regular`、`solid` 和 `brands`。因为 `solid` 下的免费图标数量最多，所以我们选择按如下方式来组织图标：

@@ -1,6 +1,6 @@
 npm run icons
 npm run build
-cp -r ./src/* .
+cp -r ./lib/* .
 rm index.js
 npm publish
 rm -rf ./components

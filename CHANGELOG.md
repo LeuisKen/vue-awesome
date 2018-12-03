@@ -1,3 +1,30 @@
+3.1.3
+* Supported not rendering anything when explicitly set `name` to `null`.
+
+3.1.2
+* Fix missing width and height.
+
+3.1.1
+* Get rid of unnecessary `<g>` wrapper for `raw` mode.
+
+3.1.0
+* Switch to `@fortawesome/fontawesome-free@5.2.0`.
+
+3.0.5
+* Fix build.
+
+3.0.4
+* Add `name` option to root classes.
+
+3.0.3
+* Update `rollup-plugin-vue` to `4.2.0`.
+
+3.0.2
+* Fix package publish.
+
+3.0.1
+* Update `@fortawesome/fontawesome-free-webfonts` to `1.0.9`.
+
 3.0.0
 * Updated all icons to Font Awesome 5, see [README](./README.md) for updated usages.
 
